@@ -1,12 +1,13 @@
-
-# require File.join(File.dirname(__FILE__), "couchrest", "extended_document")
-
-gem 'couchrest'
-
+gem 'couchrest', ">=1.0.0.beta"
 require 'couchrest'
 
+gem "builder", ">=2.1.2"
+
+gem 'activesupport', ">= 2.3.0"
 require 'active_support/core_ext'
 require 'active_support/json'
+
+gem "mime-types", ">= 1.15"
 require 'mime/types'
 require "enumerator"
 
