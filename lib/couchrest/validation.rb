@@ -48,8 +48,10 @@ module CouchRest
   module Validation
     
     def self.included(base)
-      base.extlib_inheritable_accessor(:auto_validation)
       base.class_eval <<-EOS, __FILE__, __LINE__ + 1
+          extend CouchRest::InheritableAttributes
+          couchrest_inheritable_accessor(:auto_validation)
+
           # Callbacks
           define_callbacks :validate
           

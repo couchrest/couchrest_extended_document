@@ -370,6 +370,8 @@ module CouchRest
       end
 
       module ClassMethods
+        extend CouchRest::InheritableAttributes
+
         #CHAINS = {:before => :before, :around => :before, :after => :after}
 
         # Make the _run_save_callbacks method. The generated method takes
@@ -497,9 +499,9 @@ module CouchRest
         def define_callbacks(*symbols)
           terminator = symbols.pop if symbols.last.is_a?(String)
           symbols.each do |symbol|
-            extlib_inheritable_accessor("_#{symbol}_terminator") { terminator }
+            couchrest_inheritable_accessor("_#{symbol}_terminator") { terminator }
 
-            extlib_inheritable_accessor("_#{symbol}_callback") do
+            couchrest_inheritable_accessor("_#{symbol}_callback") do
               CallbackChain.new(symbol)
             end
 
