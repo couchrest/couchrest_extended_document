@@ -20,7 +20,7 @@ begin
     gemspec.description = "CouchRest::ExtendedDocument provides aditional features to the standard CouchRest::Document class such as properties, view designs, callbacks, typecasting and validations."
     gemspec.email = "jchris@apache.org"
     gemspec.homepage = "http://github.com/couchrest/couchrest_extended_document"
-    gemspec.authors = ["J. Chris Anderson", "Matt Aimonetti", "Marcos Tapajos", "Will Leinweber"]
+    gemspec.authors = ["J. Chris Anderson", "Matt Aimonetti", "Marcos Tapajos", "Will Leinweber", "Sam Lown"]
     gemspec.extra_rdoc_files = %w( README.md LICENSE THANKS.md )
     gemspec.files = %w( LICENSE README.md Rakefile THANKS.md history.txt couchrest.gemspec) + Dir["{examples,lib,spec,utils}/**/*"] - Dir["spec/tmp"]
     gemspec.has_rdoc = true
@@ -29,7 +29,7 @@ begin
     gemspec.add_dependency("activesupport", ">= 2.3.0")
     gemspec.add_dependency("builder", ">=2.1.2")
     gemspec.version = CouchRest::ExtendedDocument::VERSION
-    gemspec.date = "2010-07-01"
+    gemspec.date = Time.now.strftime("%Y-%m-%d")
     gemspec.require_path = "lib"
   end
 rescue LoadError

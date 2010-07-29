@@ -13,7 +13,10 @@ changes. A list of these people is included below.
  * [Matt Lyon](http://mattly.tumblr.com/)
  * Simon Rozet (simon /at/ rozet /dot/ name)
  * [Marcos Tapajós](http://tapajos.me)
+ * [Sam Lown](http://github.com/samlown)
+ * [Will Leinweber](http://github.com/will)
+
  
-Patches are welcome. The primary source for this software project is [on Github](http://github.com/couchrest/couchrest)
+Patches are welcome. The primary source for this software project is [on Github](http://github.com/couchrest/couchrest_extended_document)
 
 A lot of people have active forks - thank you all - even the patches I don't end up using are helpful.

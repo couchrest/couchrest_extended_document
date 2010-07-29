@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.version = "1.0.0.beta6"
 
   s.required_rubygems_version = Gem::Requirement.new("> 1.3.1") if s.respond_to? :required_rubygems_version=
-  s.authors = ["J. Chris Anderson", "Matt Aimonetti", "Marcos Tapajos", "Will Leinweber"]
-  s.date = %q{2010-07-01}
+  s.authors = ["J. Chris Anderson", "Matt Aimonetti", "Marcos Tapajos", "Will Leinweber", "Sam Lown"]
+  s.date = %q{2010-07-28}
   s.description = %q{CouchRest::ExtendedDocument provides aditional features to the standard CouchRest::Document class such as properties, view designs, callbacks, typecasting and validations.}
   s.email = %q{jchris@apache.org}
   s.extra_rdoc_files = [
@@ -29,6 +29,7 @@ Gem::Specification.new do |s|
      "lib/couchrest/extended_document.rb",
      "lib/couchrest/mixins.rb",
      "lib/couchrest/mixins/attribute_protection.rb",
+     "lib/couchrest/mixins/attributes.rb",
      "lib/couchrest/mixins/callbacks.rb",
      "lib/couchrest/mixins/class_proxy.rb",
      "lib/couchrest/mixins/collection.rb",
@@ -36,12 +37,11 @@ Gem::Specification.new do |s|
      "lib/couchrest/mixins/document_queries.rb",
      "lib/couchrest/mixins/extended_attachments.rb",
      "lib/couchrest/mixins/properties.rb",
-     "lib/couchrest/mixins/validation.rb",
+     "lib/couchrest/mixins/typecast.rb",
      "lib/couchrest/mixins/views.rb",
      "lib/couchrest/property.rb",
      "lib/couchrest/support/couchrest.rb",
      "lib/couchrest/support/rails.rb",
-     "lib/couchrest/typecast.rb",
      "lib/couchrest/validation.rb",
      "lib/couchrest/validation/auto_validate.rb",
      "lib/couchrest/validation/contextual_validators.rb",
@@ -123,18 +123,18 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<couchrest>, [">= 1.0.0.beta"])
+      s.add_runtime_dependency(%q<couchrest>, [">= 1.0.0.beta1"])
       s.add_runtime_dependency(%q<mime-types>, [">= 1.15"])
       s.add_runtime_dependency(%q<activesupport>, [">= 2.3.0"])
       s.add_runtime_dependency(%q<builder>, [">= 2.1.2"])
     else
-      s.add_dependency(%q<couchrest>, [">= 1.0.0.beta"])
+      s.add_dependency(%q<couchrest>, [">= 1.0.0.beta1"])
       s.add_dependency(%q<mime-types>, [">= 1.15"])
       s.add_dependency(%q<activesupport>, [">= 2.3.0"])
       s.add_dependency(%q<builder>, [">= 2.1.2"])
     end
   else
-    s.add_dependency(%q<couchrest>, [">= 1.0.0.beta"])
+    s.add_dependency(%q<couchrest>, [">= 1.0.0.beta1"])
     s.add_dependency(%q<mime-types>, [">= 1.15"])
     s.add_dependency(%q<activesupport>, [">= 2.3.0"])
     s.add_dependency(%q<builder>, [">= 2.1.2"])
