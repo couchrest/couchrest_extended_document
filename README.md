@@ -225,13 +225,13 @@ CouchRest install, from the project root directory run `rake`, or `autotest`
 
 API: [http://rdoc.info/projects/couchrest/couchrest_extended_document](http://rdoc.info/projects/couchrest/couchrest_extended_document)
 
-Check the wiki for documentation and examples [http://wiki.github.com/couchrest/couchrest](http://wiki.github.com/couchrest/couchrest)
+Check the wiki for documentation and examples [http://wiki.github.com/couchrest/couchrest](http://wiki.github.com/couchrest/couchrest_extended_document)
 
 
 
 ## Contact
 
-Please post bugs, suggestions and patches to the bug tracker at [http://github.com/couchrest/couchrest/issues](http://github.com/couchrest/couchrest/issues).
+Please post bugs, suggestions and patches to the bug tracker at [http://github.com/couchrest/couchrest/issues](http://github.com/couchrest/couchrest_extended_document/issues).
 
 Follow us on Twitter: [http://twitter.com/couchrest](http://twitter.com/couchrest)
 
