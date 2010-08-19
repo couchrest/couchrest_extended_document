@@ -5,6 +5,12 @@ setting properties, callbacks, typecasting, and validations.
 
 Note: CouchRest::ExtendedDocument only supports CouchDB 0.10.0 or newer.
 
+## Warning: Deprecated!
+
+CouchRest::ExtendedDocument has largely been replaced by [CouchRest::Model](http://github.com/couchrest/couchrest_model). ExtendedDocument won't be seeing any new features, but we'll do bugfix releases as needed. 
+
+Please check out [CouchRest::Model](http://rubygems.org/gems/couchrest_model) for all your syntactic sugar needs!
+
 ## Install
 
     $ sudo gem install couchrest_extended_document
